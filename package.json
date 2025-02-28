@@ -1,0 +1,23 @@
+{
+  "name": "webcat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc && node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nathcat/WebCat.git"
+  },
+  "author": "Nathcat",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Nathcat/WebCat/issues"
+  },
+  "homepage": "https://github.com/Nathcat/WebCat#readme",
+  "dependencies": {
+    "http": "^0.0.1-security"
+  }
+}
