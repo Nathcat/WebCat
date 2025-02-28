@@ -29,6 +29,11 @@ function getTemplates(
         map[v.split(".")[0]] = parse(fs.readFileSync(templatesRoot + '/' + v).toString());
     });
 
+    let keys = Object.keys(map);
+    for (let i = 0; i < keys.length; i++) {
+        map[keys[i]] = replaceWebCatScripts(replaceTemplates(map[keys[i]], map));
+    }
+
     return map;
 }
 
