@@ -2,10 +2,11 @@
   "name": "webcat",
   "version": "1.0.0",
   "description": "",
-  "main": "build/server.js",
+  "main": "build/src/main-server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tsc && node build/server.js"
+    "start": "npx tsc && node build/src/main-preprocess.js && node build/src/main-server.js",
+    "pp": "npx tsc && node build/src/main-preprocess.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,12 @@
   },
   "homepage": "https://github.com/Nathcat/WebCat#readme",
   "dependencies": {
-    "http": "^0.0.1-security"
+    "@types/jquery": "^3.5.32",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "node-html-parser": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5"
   }
 }

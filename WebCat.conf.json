@@ -1,0 +1,6 @@
+{
+    "pre-processor": {
+        "appPath": "testapp",
+        "outDir": "build"
+    }
+}
