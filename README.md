@@ -6,6 +6,7 @@ _WebCat © Nathcat 2025_
 - [WebCat](#webcat)
   - [Contents](#contents)
 - [What is WebCat](#what-is-webcat)
+- [Running WebCat](#running-webcat)
 - [Configuration file syntax](#configuration-file-syntax)
 - [Pre-processing](#pre-processing)
   - [TypeScript](#typescript)
@@ -15,6 +16,19 @@ _WebCat © Nathcat 2025_
 
 WebCat is a web application framework built by [Nathcat](https://nathcat.net) as part of the [NathCat Network](https://nathcat.net/network). It features a simple pre-processor which allows for a templating system, and a method for linking compiled TypeScript files to HTML files.
 
+# Running WebCat
+
+You can run your WebCat application using
+
+```
+npm run start
+```
+
+You can also just run the pre-processor using
+
+```
+npm run pp
+```
 
 # Configuration file syntax
 The configuration file should be placed placed at the project root, `/WebCat.conf.json`, and contain the following options:
