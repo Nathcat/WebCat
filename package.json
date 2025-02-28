@@ -2,10 +2,10 @@
   "name": "webcat",
   "version": "1.0.0",
   "description": "",
-  "main": "build/index.js",
+  "main": "build/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx tsc && node build/index.js"
+    "start": "npx tsc && node build/server.js"
   },
   "repository": {
     "type": "git",
