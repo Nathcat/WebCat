@@ -1,6 +1,11 @@
 {
-    "pre-processor": {
+    "preProcessor": {
         "appPath": "testapp",
         "outDir": "build"
+    },
+
+    "server": {
+        "port": 8080,
+        "hostname": "localhost"
     }
 }
