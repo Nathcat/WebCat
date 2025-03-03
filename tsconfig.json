@@ -104,7 +104,7 @@
 
   "include": [
     "src/**/*",
-    "testapp/scripts"
+    "app/scripts"
   ],
   
   "exclude": [
