@@ -29,6 +29,18 @@ export function static_file(res: http.ServerResponse, root: string, path: string
         res.end(fs.readFileSync(root + '/scripts/' + path.slice(2).join('/')).toString());
         return;
     }
+    else if (path[1] === "page") {
+        let fileName = path[2] + ".html";
+        if (!fs.existsSync(root + "/" + fileName)) {
+            error_404(res, config);
+            return;
+        }
+
+        res.statusCode = 200;
+        res.setHeader("Content-Type", "text/html");
+        res.end(fs.readFileSync(root + '/' + fileName).toString());
+        return;
+    }
     
     error_404(res, config);
 }
